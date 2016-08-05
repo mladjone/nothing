@@ -1,0 +1,475 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+body{
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6{
+font-family: 'Roboto Slab', serif;
+}
+a, p{
+	font-family: 'Lora', serif;
+	font-style: italic;
+}
+header {
+	position: absolute;
+	z-index: 999;
+	width: 100%;
+	display: inline-block;
+	background-color: black;
+	text-align: center;
+}
+header img{
+	height: 75px;
+	vertical-align: middle;
+}
+
+header nav{
+	display: inline-block;
+	background-color: black;
+	text-align: center;
+}
+header nav ol{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+header nav ol li{
+	display: inline-block;
+}
+header nav a{
+	text-decoration: none;
+	font-size: 150%;
+	padding: 0 8px;
+	color: white;
+	vertical-align: middle;
+}
+header nav a:hover{
+	color: #7373FF;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.dropdown-content a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+li:hover .dropdown-content{
+    display: block;
+}
+.dropdown-content a:hover{
+	background-color: #f1f1f1;
+}
+article.languageSelect{
+	display: inline-block;
+}
+.dropdownLanguage{
+    display: none;
+    position: absolute;
+    left: auto;
+    right: 0;
+}
+.dropdownLanguage a{
+	color: black;
+    padding: 0;
+    text-decoration: none;
+    display: inline-block;
+    text-align: right;
+}
+.dropdownLanguage img{
+	width: 55px;
+	height: 55px;
+	transition-duration: 1s;
+}
+.dropdownLanguage img:hover{
+	transform: rotate(360deg);
+}
+.fa-globe{
+	color: white;
+	vertical-align: middle;
+	margin: 0 20px;
+	transition-duration: 1s;
+}
+.fa-globe:hover{
+	color: #7373FF;
+	transform: rotateY(360deg);
+}
+.languageSelect:hover .dropdownLanguage{
+    display: block;
+}
+/* 111111111111111111111111111111111111111111111111111111111111111111111111111111111111111 */
+article#firstSection{
+	position: relative;
+	background-color: black;
+}
+article#firstSection img{
+	width: 100%;
+}
+article#firstSection h1{
+	top: 200px;
+	position: absolute;
+	left: 25%;
+}
+article#firstSection p{
+	top: 250px;
+	position: absolute;
+	left: 25%;
+}
+/* 222222222222222222222222222222222222222222222222222222222222222222222222222222222222222*/
+article#secondSection{
+	text-align: center;
+	position: relative;
+	background-color: white;
+}
+article#secondSection h2{
+	font-size: 250%;
+	text-align: center;
+	border-top: 5px dashed #7373FF;
+	line-height: 0;
+	background-color: inherit;
+	margin-top: 0;
+	color: #7373FF;
+}
+article#secondSection h2 span {
+	background-color: inherit;
+	padding: 15px 15px;
+	border-top: 5px dashed #7373FF;
+	border-radius: 25px;
+}
+article#secondSection ul{
+	padding: 0;
+	list-style-type: none;
+}
+article#secondSection ul li{
+	display: inline-block;
+	position: relative;
+	width: 300px;
+	margin: 8px;
+}
+article#secondSection ul li img{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	padding: 10px;
+	border: 1px solid gray;
+	background-color: white;
+}
+article#secondSection ul li:hover div.secondSectionDiv{
+	background-color: white;
+	box-shadow: 0px 4px 4px 0px rgba(115,115,225,0.9);
+}
+article#secondSection ul li:hover img{
+	background-color: #7373FF;
+}
+div.secondSectionDiv{
+	margin-top: -110px;
+	padding-top: 110px;
+	border: 1px solid gray;
+	background-color: #7373FF;
+}
+article#secondSection p{
+	position: relative;
+	margin-bottom: 0;
+	padding: 20px 40px 20px 40px;
+	color: #7373FF;
+}
+/* 333333333333333333333333333333333333333333333333333333333333333333333333333333333333333 */
+article#thirdSection{
+	background-image: url(http://www.neweconomics.org/page/-/images/headers/halffull_blog.jpg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	color: white;
+	text-align: center;
+	padding-bottom: 50px;
+}
+article#thirdSection h2{
+	font-size: 300%;
+}
+article#thirdSection p.moreInfo{
+	color: white;
+	border: 2px solid white;
+	border-radius: 25px;
+	padding: 10px 40px;
+	display: inline;
+}
+article#thirdSection p.moreInfo:hover{
+	background-color: white;
+	color: #7373FF;
+}
+/* 444444444444444444444444444444444444444444444444444444444444444444444444444444444444444 */
+article#fourthSection{
+	background-image: url(http://www.seosubmitweb.com/images/example1/bigimage.png);
+	background-size: cover;
+	background-position: center center;
+	background-color: white;
+	position: relative;
+}
+article#fourthSection h2{
+	text-align: center;
+	font-size: 200%;
+	margin-top: 0;
+	padding-top: 20px;
+}
+article#fourthSection ul{
+	padding-left: 30%;
+	list-style-type: none;
+	text-align: right;
+	margin-bottom: 0;
+}
+article#fourthSection ul li{
+	background-size: cover;
+	background-position: center center;
+	display: inline-block;
+	position: relative;
+	width: 300px;
+	margin: 8px;
+	border-bottom: 1px solid #7373FF;
+	text-align: left;
+}
+article#fourthSection ul li:hover{
+	box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.3);
+}
+.fourthSectionDiv{
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	bottom: 0px;
+}
+.fa-thumbs-o-up{
+	color: #7373FF;
+}
+article#fourthSection ul i{
+	float: left;
+	padding-left: 5px;
+}
+article#fourthSection p{
+	overflow: hidden;
+	background-color: white;
+	margin-bottom: 0;
+	padding: 0px 5px 30px 5px; 
+}
+/* 555555555555555555555555555555555555555555555555555555555555555555555555555555555555555 */
+article#fifthSection{
+	position: relative;
+	background-color: black;	
+	text-align: center;
+}
+article#fifthSection div#fifthSectionDiv{
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	background-color: #7373FF;
+	border: 4px solid white;
+	position: absolute;
+	text-align: center;
+	top: 50%;
+	left: 50%;
+	margin: 0 auto;
+	transform: translate(-50%, -50%);
+}
+article#fifthSection div#fifthSectionDiv i{
+	margin-top: 30px;
+	color: white;
+}
+article#fifthSection div#fifthSectionDiv h2{
+	color: white;
+}
+article#fifthSection div#fifthSectionDiv:hover{
+	background-color: white;
+	border-color: #7373FF;
+}
+article#fifthSection div#fifthSectionDiv:hover h2{
+	color: #7373FF;
+}
+article#fifthSection div#fifthSectionDiv:hover i{
+	color: #7373FF;
+}
+article#fifthSection ul{
+	padding: 0 0 8px 0;
+	list-style-type: none;
+	margin: 0;
+}
+article#fifthSection ul li{
+	background-size: cover;
+	background-position: center center;
+	display: inline-block;
+	margin: 2px;
+	padding: 0;
+	width: 24%;
+	height: 250px;
+}
+article#fifthSection ul li:first-child{
+	background-image: url(http://payload.cargocollective.com/1/4/147443/2100869/TheNewNothing2.jpg);
+}
+article#fifthSection ul li:nth-child(2){
+	background-image: url(http://cdn.shopify.com/s/files/1/0192/3894/products/Nothing2_1024x1024.jpg?v=1448958941);
+}
+article#fifthSection ul li:nth-child(3){
+	background-image: url(http://www.creativity103.com/collections/Cardboard/empty_box.jpg);
+}
+article#fifthSection ul li:nth-child(4){
+	background-image: url(http://www.fed-soc.org/library/imglib/20150910_InvisibleMan.gif);
+}
+article#fifthSection ul li:nth-child(5){
+	background-image: url(http://www.constructionphotography.com/ImageThumbs/A164-00097/3/A164-00097_Empty_warehouse_Coventry_West_Midlands_UK.jpg);
+}
+article#fifthSection ul li:nth-child(6){
+	background-image: url(http://actmedia.eu/images/articles/131126104055banker_office_space_architectural_renderings_by_dbox_pict_16.jpg);
+}
+article#fifthSection ul li:nth-child(7){
+	background-image: url(http://www.depthinsights.com/Depth-Insights-scholarly-ezine/wp-content/uploads/empty-book-blank-journal-93664118.jpg);
+}
+article#fifthSection ul li:nth-child(8){
+	background-image: url(http://www.basesproduced.com/images/2006trip/LonelyCloud.jpg);
+}
+article#fifthSection ul li p{
+	font-size: 2%;
+	position: relative;
+	text-align: center;
+	top: 50%;
+	margin: 0 auto;
+	color: white;
+	text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+	transition-duration: 2s;
+	transition-timing-function: ease;
+	visibility: hidden;
+}
+article#fifthSection ul li:hover p{
+	transform: scale(4) rotate(1440deg);
+	visibility: visible;	
+}
+/* 666666666666666666666666666666666666666666666666666666666666666666666666666666666666666 */
+article#sixthSection{
+	background-image: url(http://www.mediarecruiting.com/wp-content/uploads/2014/02/Body-Language-Dos.jpg);
+	background-size: cover;
+	background-position: center;
+	color: white;
+	text-align: center;
+}
+article#sixthSection div{
+	background-color: rgba(0,0,110,0.7);
+	padding: 100px;
+}
+article#sixthSection h2{
+	font-size: 300%;
+}
+article#sixthSection h6.buyMe{
+	font-size: 200%;
+	color: white;
+	border: 2px solid white;
+	border-radius: 25px;
+	padding: 10px 40px;
+	display: inline;
+	font-family: "Open Sans"
+}
+article#sixthSection h6.buyMe:hover{
+	color: #7373FF;
+	background-color: white;
+}
+article#sixthSection p{
+	font-size: 120%;
+	color: white;
+	padding: 5px 10px 5px 10px;
+	margin-top: 40px;
+}
+/* FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF */
+footer{
+	background-color: black;
+	color: white;
+	margin: 0;
+}
+ul#infoFooter{
+	padding: 0;
+	margin: 0;
+}
+ul#infoFooter h3{
+	color: #7373FF;
+	font-size: 120%;
+}
+ul#infoFooter li{
+	display: inline-block;
+	vertical-align:top;
+	padding: 5px 20px 0px 0px;
+}
+
+table#rcas{
+	display: inline-block;
+	background-color: orange;
+/*	background-image: url(https://images7.alphacoders.com/601/601969.jpg);*/
+	background-image: url(http://wallpaperspics.com/wallpapers/25/0/background-alone-danbo-wallpaper-photo-253152.jpg);
+	background-size: cover;
+	background-position: center center;
+	border-collapse: collapse;
+}
+table#rcas td{
+	border: 4px solid black;
+}
+table#rcas tr:nth-child(2) td:nth-child(4),table#rcas tr:nth-child(1) td:nth-child(2),table#rcas tr:nth-child(3) td:nth-child(6),table#rcas tr:nth-child(3) td:nth-child(1),table#rcas tr:nth-child(5) td:nth-child(5),table#rcas tr:nth-child(6) td:nth-child(1){
+	background-color: black;
+}
+table#rcas td, table#rcas img{
+	width: 50px;
+	height: 50px;
+	display: inline-block;
+	position: relative;
+}
+table#rcas img{
+	transition: transform 1s;
+}
+table#rcas td:hover img{
+	transform: rotateY( 180deg );
+}
+ul#infoFooter li:nth-child(2) p:nth-child(2):before{
+	font-family: 'FontAwesome';
+	content: "\f041";
+	font-size: 150%;
+	color: #7373FF;
+	display: inline-block;
+	padding-right: 10px;
+}
+ul#infoFooter li:nth-child(2) p:nth-child(4):before{
+	font-family: 'FontAwesome';
+	content: "\f095";
+	font-size: 150%;
+	color: #7373FF;
+	display: inline-block;
+	padding-right: 10px;
+}
+ul#infoFooter li:nth-child(2) a{
+	color: white;
+	text-decoration-style: none;
+}
+ul#infoFooter li:nth-child(2) a:before{
+	font-family: 'FontAwesome';
+	content: "\f0e0";
+	font-size: 150%;
+	color: #7373FF;
+	display: inline-block;
+	padding-right: 10px;
+}
+ul#infoFooter li:nth-child(3) p:before{
+	font-family: 'FontAwesome';
+	content: "\f017";
+	font-size: 150%;
+	color: #7373FF;
+	display: inline-block;
+	padding-right: 10px;
+}
+article#endOfTheLine{
+	background-color: #2E2E2E;
+	overflow: hidden;
+	padding: 15px 30px 15px 30px;
+	font-size: 90%;
+}
+article#endOfTheLine p{
+	color: #ADADAD;
+}
+article#endOfTheLine p:first-child{
+	float: right;
+}
